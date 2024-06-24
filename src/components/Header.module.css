@@ -1,0 +1,13 @@
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.headerTitle {
+    flex-grow: 1;
+}
+
+.headerAction {
+    flex: 0 0 16px;
+    height: 16px;
+}

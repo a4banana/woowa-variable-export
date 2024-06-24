@@ -1,0 +1,15 @@
+.collectionListItem {
+    display: flex;
+    align-items: center;
+}
+
+.collectionListItemInfo {
+    overflow: hidden;
+    flex-grow: 1;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.collectionListItemAction {
+    flex: 0 0 16px;
+}
