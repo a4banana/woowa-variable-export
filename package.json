@@ -20,7 +20,7 @@
     "watch": "build-figma-plugin --typecheck --watch"
   },
   "figma-plugin": {
-    "editorType": ["figma"],
+    "editorType": ["figma", "dev"],
     "id": "1384753602394209622",
     "name": "Woowa Variable Export",
     "api": "1.0.0",
