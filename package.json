@@ -21,6 +21,7 @@
   },
   "figma-plugin": {
     "editorType": ["figma", "dev"],
+    "capabilities": ["inspect" ],
     "id": "1384753602394209622",
     "name": "Woowa Variable Export",
     "api": "1.0.0",
