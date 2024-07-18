@@ -31,7 +31,7 @@ const useSaveCollection = () => {
         new Blob([JSON.stringify( collection )], { type: 'application/json' });
 
     const getCollecitonJsonFileName = ( collectionName: string ): string =>
-        `${ toKebabCase( collectionName ) }-${ toFormattedDate( new Date()) }.json`
+        `${ toKebabCase( collectionName ) }.json`
 
     // Save collection to a json file
     const saveCollectionAsJson = useCallback(({
@@ -62,7 +62,7 @@ const useSaveCollection = () => {
         const zip = collections.reduce( addCollectionToZip, new JSZip());
 
         zip.generateAsync({ type: 'blob' })
-            .then( file => saveAs( file, `all-collections-${ toFormattedDate( new Date()) }.zip` ));
+            .then( file => saveAs( file, `all-collections.zip` ));
     }, [])
 
     return {
